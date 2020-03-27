@@ -60,6 +60,10 @@ pibrella.button.released(handle_button)
 
 #time.sleep(20)
 
-signal.pause()
+try:
+    print("Press the red button!")
+    signal.pause()
+except KeyboardInterrupt:
+    pass
 
 # Exit!
